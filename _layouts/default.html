@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+  <main role="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script>
+    // let app.js know includes are present
+    document.dispatchEvent(new CustomEvent('includes:loaded', { detail:[{name:'server-includes',loaded:true}] }));
+  </script>
+  <script src="{{ '/assets/app.js' | relative_url }}"></script>
+</body>
+</html>
