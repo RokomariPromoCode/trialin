@@ -1,0 +1,31 @@
+<header id="siteHeader" class="site-header" role="banner">
+  <div class="container header-inner">
+    <a class="logo" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title | default: 'Site' }}" class="logo-img">
+    </a>
+
+    <div class="search-area">
+      <input id="globalSearch" class="search-input" type="search" placeholder="Search..." aria-label="Search" />
+      <button id="searchBtn" class="search-btn" aria-label="Search">Search</button>
+    </div>
+
+    <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Open menu">☰</button>
+  </div>
+
+  <aside id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <button id="mobileMenuClose" class="mobile-close" aria-label="Close menu">✕</button>
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+</header>
