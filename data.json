@@ -1,0 +1,14 @@
+[
+  {
+    "title": "গাভী বিত্তান্ত — আহমদ ছফা",
+    "img": "https://via.placeholder.com/160x220.png?text=Cover+1",
+    "desc": "সংক্ষিপ্ত পরিচিতি।",
+    "link": "https://affiliate.example.com/book1"
+  },
+  {
+    "title": "ইতিহাস — লেখক X",
+    "img": "https://via.placeholder.com/160x220.png?text=Cover+2",
+    "desc": "ক্লাসিক ইতিহাস বইয়ের সারাংশ।",
+    "link": "https://affiliate.example.com/book2"
+  }
+]
